@@ -15,8 +15,6 @@
        background-color: #C0C0C0;
    }
    .home_page_section{
-
-height: 100vh;
 width: 100%;
 display: flex;
 justify-content: space-between;
@@ -26,7 +24,6 @@ justify-content: space-between;
     header{
         display: flex;
         justify-content: space-between;
-        height: 100vh;
         flex-direction: column;
         align-items: center;
         padding: 20px 20px;
