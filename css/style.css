@@ -12,9 +12,10 @@
    body{
        float: left;
        width: 100%;
+       background-color: #C0C0C0;
    }
    .home_page_section{
-background-color: #C0C0C0;
+
 height: 100vh;
 width: 100%;
 display: flex;
