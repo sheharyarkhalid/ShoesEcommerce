@@ -63,7 +63,6 @@ justify-content: space-between;
     }
     .home_page_body{
         align-items: center;
-        gap: 0px 20px;
         display: flex;
         justify-content: space-between;
     }
@@ -79,7 +78,7 @@ justify-content: space-between;
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding-top: 300px;
+          padding: 300px 0px 0px 20px;
         }
       .explore_new span{
           color: #000000;
