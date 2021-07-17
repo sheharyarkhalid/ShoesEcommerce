@@ -1,0 +1,36 @@
+*{
+    -web-kit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+   padding:0px;
+   margin:0px;
+   font-family: 'Rokkitt', serif;
+}
+   html {
+     scroll-behavior: smooth;
+    }
+   body{
+       float: left;
+       width: 100%;
+       background-color: #C0C0C0;
+   }
+   .home_page_section{
+width: 100%;
+float: left;
+}
+.shoes_header{
+padding: 20px 20px;
+height: 100vh;
+width: 70px;
+}
+.shoes_header ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.shoes_header li{
+    list-style: none;
+}
+
