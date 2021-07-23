@@ -4,36 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 <body>
+    <style>
+
+    </style>
 <section id="greater_then_mobile">
-    <section class="home_page_section" id="home_page">
+    <section class="home_page_section">
       
         <header>
             <div class="nav_plus_shooping"> 
-             <div class="nav_icon"><i class="fas fa-bars"></i></div>
+             <div class="nav_icon"><a href="#" class="open_close_nav"><i class="fas fa-bars"></i></a></div>
              <div class="shopping_cart"><i class="fas fa-shopping-bag"></i></div>
             </div>
-            <div class="logo"><span>REACH YOUR</span><span class="logo_middle_part"><small>R</small><small>Y</small><small>H</small><small>L</small></span><span>HIGHEST LEVEL</span></div>
+            <div class="logo"><span>REACH YOUR</span><span class="logo_middle_part"><a href="#"><small>R</small><small>Y</small><small>H</small><small>L</small></a></span><span>HIGHEST LEVEL</span></div>
              <div class="insta_icon"><i class="fab fa-instagram"></i></div>
         </header>
-      
+     
         <section class="home_page_body">
+            <!-- <div class="slider"> -->
+
           <div class="home_page_slider"><figure><img src="image/home_banner.png"></figure></div>
+        
+        <!-- </div> -->
           <div class="explore_new"><span>explore new sneakers</span><figure><img src="image/home_page_arrow.png"></figure></div>
         </section>
-
+     
         
              <div class="home_page_footer">
-                 <div class="footer_content"><a href="#">impressum</a></div>
-                 <div class="footer_content"><a href="#">shipping</a></div>
-                 <div class="footer_content"><a href="#">contact</a></div>
+                 <div class="footer_content"><a href="impressum.html">impressum</a></div>
+                 <div class="footer_content"><a href="shipping.html">shipping</a></div>
+                 <div class="footer_content"><a href="contact.html">contact</a></div>
                 </div>
       
 
@@ -43,30 +55,30 @@
 <section class="Mobile_home_section">
     <div class="mobile_header">
         <div class="shopping_cart"><i class="fas fa-shopping-bag"></i></div>
-        <div class="logo"><a href="#">LOGO</a></div>
-        <div class="nav_icon"><i class="fas fa-bars"></i></div>
+        <div class="logo"><a href="index.html">LOGO</a></div>
+        <div class="nav_icon"><a class="open_close_nav"><i class="fas fa-bars"></i></a></div>
     </div>
     <div class="mobile_banner">
         <h2>Reach Your Highest Level</h2>
         <figure><img src="image/home_banner.png"></figure>
         <div class="mobile_explore"><span>explore new sneakers</span><div class="figure"><img src="image/home_page_arrow.png"></div></div>
     </div>
-
+  
     <div class="mobile_footer">
         
-        <a class="mobile_footer_content" href="#">
+        <a class="mobile_footer_content" href="impressum.html">
             <div class="mobile_footer_field">
             <span>impressum</span>
             <small>impressum</small>
             </div>
         </a>
-        <a class="mobile_footer_content" href="#">
+        <a class="mobile_footer_content" href="shipping.html">
             <div class="mobile_footer_field">
             <span>Shipping</span>
             <small>Shipping</small>
             </div>
         </a>
-        <a class="mobile_footer_content" href="#">
+        <a class="mobile_footer_content" href="contact.html">
             <div class="mobile_footer_field">
             <span>contact</span>
             <small>contact</small>
@@ -82,6 +94,117 @@
 </section>
 
 
+<!-- responsive nav start -->
+<section class="responsive_nav_bar">
+  
+  <section class="responsive_nav_page_section">     
+    <div class="responsive_header">
+    
+       <div class="responsive_nav_icon"><a class="open_close_nav"><i class="fas fa-times"></i></a></div>
+  
+      <div class="responsive_logo"><span>REACH YOUR</span><span class="responsive_logo_middle_part"><a href="index.html"><small>R</small><small>Y</small><small>H</small><small>L</small></a></span><span>HIGHEST LEVEL</span></div>
+       
+      <div class="responsive_insta_icon"><i class="fab fa-instagram"></i></div>
+    </div>
+
+     <section class="responsive_nav_details">
+       <div class="responsive_nav_details_secion_one">
+         <span><a href="index.html">start</a></span>
+         <span><a href="raffle.html">RAFFLE</a></span>
+          <span> <a href="sneaker.html">SNEAKERS</a></span>
+            <span> <a href="sign_up.html">Sign up</a></span>
+              <span><a href="login.html">login</a></span>
+       </div>
+       <div class="responsive_nav_details_secion_two">
+           <ul>
+             <li><a href="impressum.html">IMPRESSUM</a></li>
+             <li><a href="shipping.html">SHIPPING</a></li>
+             <li><a href="contact.html">CONTACT</a></li>
+           </ul>
+         </div>
+         <div class="responsive_nav_details_secion_three">
+          <ul>
+            <li><a href="privacy.html">privacy</a></li>
+            <li><a href="agb.html">agb</a></li>
+          </ul>
+        </div>
+     </section>
+
+
+    </section>
+
+</section>
+<!-- responsive nav end -->
+
+
+
+
+
+
+<script>
+  $('.open_close_nav').click(function(){
+$('.responsive_nav_bar').toggleClass('responsive_bar');
+    });
+  
+</script>
+
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/slick.js"></script>
+  <script type="text/javascript" src="script/slick.min.js"></script>
+
+<script type="text/javascript">  
+
+  $(document).ready(function() {      
+$('.slider').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll:1,
+  autoplay:false,
+  autoplaySpeed:1500,
+  arrows:false,
+speed: 1500,
+  });
+  });
+
+  $(document).ready(function() {      
+$('.sliderTwo').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll:1,
+  autoplay:false,
+  autoplaySpeed:1500,
+  arrows:false,
+speed: 1500,
+  });
+  });
+
+    $(document).ready(function() {      
+$('.sliderThree').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 1,
+  autoplay:true,
+  fade:true,
+  autoplaySpeed:1500,
+  arrows:false,
+speed: 1500,
+  });
+  });
+        $(document).ready(function() {      
+$('.sliderfour').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll:1,
+  autoplay:false,
+  autoplaySpeed:900,
+  arrows:false,
+speed: 900,
+  });
+  });
+</script>
 
 </body>
 </html>    

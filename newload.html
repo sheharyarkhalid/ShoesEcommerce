@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- <script src="jquery-2.1.4.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+  <body>
+      <style>
+  body {
+  background:#111;
+  font-family:"Oswald",sans-serif;
+}
+.text-animation {
+  color:#fff;
+  opacity:0;
+}
+.text-animation span {
+  position:relative;
+  top:10px;
+  left:10px;
+  font-size:50px;
+  font-weight:600;
+  opacity:0;
+  text-transform:uppercase;
+  animation:fade 400ms ease-in-out forwards;
+}
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+@keyframes fade {
+  0% {
+    top:10px;
+    left:10px;
+    filter:blur(15px);
+    opacity:0;
+  }
+  50% {
+    filter:blur(10px);
+    opacity:0.9;
+  }
+  100% {
+    top:0px;
+    left:0px;
+    filter:blur(0px);
+    opacity:1;
+  }  
+}
+      </style>
+  <div class="center">
+    <div class="text-animation">
+     F l Y s
+    </div>
+  </div>  
+  
+<div id="welcome_msg">Welcome to the example snippet</div>
+    <script>
+var wrapper = document.getElementsByClassName("text-animation")[0];
+wrapper.style.opacity="1";
+wrapper.innerHTML = wrapper.textContent.replace(/./g,"<span>$&</span>");
+
+var spans = wrapper.getElementsByTagName("span");
+
+for(var i=0;i<spans.length;i++){
+  spans[i].style.animationDelay = i*80+"ms";
+}
+    </script>
+  </body>
+</html>

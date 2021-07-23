@@ -18,6 +18,13 @@
     display: block;
     visibility:visible;
 }
+.raffle_form_page_section{
+    display: grid;
+    grid-template-columns: 0.2fr 8fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: ". .";
+}
    /* Header start */
    header{
     display: flex;
@@ -26,8 +33,8 @@
     align-items: center;
     padding: 20px 20px;
     border-right: 1px solid #000000;
-    margin-right: 100px;
     float: left;
+    height: 100%;
 }
 header .nav_plus_shooping .nav_icon i{
     color: #000000;
@@ -73,134 +80,164 @@ header .insta_icon i{
 }
 /* Header End */ 
 
+
 /* login form start*/
-.login_container{
-    max-width: 430px;
+.raffle_form_container{
+    max-width: 740px;
     margin: 0px auto;
  }
 
 
-.login_section{
+.raffle_form_body_section{
 float: left;
 width: 100%;
-padding: 0px 10px;
-position: absolute;
+padding: 0px 15px;
 margin: 0;
-top: 80px;
+margin-top: 40px;
 
 }
 
-.login_section .login_form{
+.raffle_form_body_section .raffle_section_heading{
 float: left;
 width: 100%;
-padding: 0px 30px;
 margin-bottom: 10px;
 }
-.login_section .login_form h3{
-margin-bottom: 60px;
+.raffle_form_body_section .raffle_section_heading h3{
+margin-bottom: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
 text-decoration: none;
 width: 100%;
-font-size: 44px;
+font-size: 36px;
 font-style: normal;
 color: #232323;
 font-weight: 500;
 line-height: 48px;
 }
-.login_section .login_form form .login_fields{
-display: flex;
-flex-direction: column;
-width: 100%;
-}
-
-.login_section .login_form form .login_fields .input_field{
-width: 100%;
-}
-.login_section .login_form form .login_fields .input_field label{
-width: 100%;
-display: block;
-font-size: 16px;
-color: #232323;
-padding-bottom: 15px;
-font-weight: normal;
-line-height: 16px;
-text-align: left;
-}
-.login_section .login_form form .login_fields .input_field input{
-
-padding: 0.375rem 0.75rem;
-font-size: 1rem;
-line-height: 1.5;
-color: #000000;
-background-color: #C0C0C0;
-background-clip: padding-box;
-border: 1px solid #000000;
-border-radius:2px;
-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
- margin-bottom: 25px;
- outline: none;
- width: 100%;
-}
-.login_section .login_form form .login_fields .forget_password{
+.raffle_form_img_detail{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ".";
+    gap: 20px 0px;
     width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
-.login_section .login_form form .login_fields .forget_password span{
+.raffle_form_img_detail figure img{
+    width: 50%;
+}
+
+.raffle_product_info{
+display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: auto;
+grid-template-areas: ". .";
+gap:20px 20px;
+align-items: center;
+margin-bottom: 30px;
+}
+.raffle_product_info h3{
+font-size: 25px;
+line-height: 41px;
+}
+.raffle_product_info_detail .raffle_product_info_single_detail{
+    padding-bottom:20px ;
+}
+.raffle_product_info_detail .raffle_product_info_single_detail p{
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    
+}
+
+.raffle_purchase_form_container{
+max-width:430px;
+margin: 0 auto;
+}
+.raffle_purchase_form form .raffle_purchase_form_fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    
+    .raffle_purchase_form form .raffle_purchase_form_fields .raffle_purchase_form_input_field{
+    width: 100%;
+    }
+    .raffle_purchase_form form .raffle_purchase_form_fields .raffle_purchase_form_input_field label{
     width: 100%;
     display: block;
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.57);
-    padding-bottom: 20px;
+    color: #232323;
+    padding-bottom: 15px;
     font-weight: normal;
     line-height: 16px;
     text-align: left;
-}
-.login_section .login_form form .login_fields .submit_btn{
-display: flex;
-justify-content: center;
-align-items:center;
-margin-bottom: 20px;
-width: 100%;
-}
-.login_section .login_form form .login_fields .submit_btn button{
-color: #000000;
-background-color: #9E9E9E;
-border: 1px solid #000000;
-cursor: pointer;
-user-select: none;
-font-size: 18px;
-line-height: 20px;
-padding: 0px 38px;
-text-align: center;
-height: 39px;
-font-weight: normal;
-}
-.login_section .login_form form .login_fields .submit_btn span{
-    color: #000000;
-    font-size: 17px;
-    text-align: center;
-    font-weight: normal;
-    
     }
-.login_section .login_form form .login_fields .submit_btn a{
+    .raffle_purchase_form form .raffle_purchase_form_fields .raffle_purchase_form_input_field input{
+    
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #000000;
-    background: rgba(255, 255, 255, 0.26);
+    background-color: #C0C0C0;
+    background-clip: padding-box;
     border: 1px solid #000000;
-    cursor: pointer;
-    user-select: none;
-    font-size: 18px;
-    line-height: 20px;
-    padding:0px 37px;
-    text-align: center;
-    height: 39px;
-    font-weight: normal;
-    text-decoration: none;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    border-radius:2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+     margin-bottom: 25px;
+     outline: none;
+     width: 100%;
     }
 
+
+
+    .raffle_purchase_form form .raffle_purchase_form_fields .raffle_purchase_form_submit_btn{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-bottom: 20px;
+        width: 100%;
+        }
+        .raffle_purchase_form form .raffle_purchase_form_fields .raffle_purchase_form_submit_btn button{
+        color: #000000;
+        background-color: #9E9E9E;
+        border: 1px solid #000000;
+        cursor: pointer;
+        user-select: none;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 0px 38px;
+        text-align: center;
+        height: 39px;
+        font-weight: normal;
+        }
+
+        .raffle_purchase_form_check_box{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .raffle_purchase_form_check_box a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .raffle_purchase_form_check_box input{
+            background-color: #9E9E9E;
+            border: 1px solid #000000;
+           cursor: pointer;
+        }
+        .raffle_purchase_form_check_box label{
+            font-size: 18px;
+            line-height: 20px;
+            padding: 0px 10px;
+            font-weight: 400;
+            color: #000000;
+        }
 
 /* login form end */
 
@@ -239,7 +276,6 @@ font-weight: normal;
       /* header end */
 
 /* Mobile Screen home page end */      
-
 
 
 /* responsive nav bar start */
@@ -410,7 +446,6 @@ overflow-y: scroll;
 
 
 
-
 /* RESPONSIVE */
 
 /*Tablet*/
@@ -419,8 +454,9 @@ overflow-y: scroll;
 
 }
 @media (max-width: 767px){
-    .login_section .login_form {
-        padding: 0px 65px;
+    .reffle_product_name h4 {
+        font-size: 36px;
+        line-height: 31px;
     }
 }
 @media (max-width: 540px){
@@ -432,14 +468,23 @@ overflow-y: scroll;
         display: none;
         visibility:hidden;
     }
-    .login_section{
-      top:100px;
+    .raffle_product_info {
+        grid-template-columns: 1fr;
+        grid-template-areas: ".";
     }
-    .login_section .login_form {
-        padding: 0px 20px;
+    .raffle_form_body_section .raffle_section_heading h3 {
+        font-size: 22px;
+        line-height: 17px;
+    }
+    .raffle_form_img_detail figure img {
+        width: 60%;
+    }
+    .raffle_product_info h3 {
+        font-size: 18px;
+        line-height: 20px;
     }
 
-      
+     
     .responsive_nav_details_secion_one {
         padding-left: 25px;
     } 
@@ -468,4 +513,5 @@ overflow-y: scroll;
     .responsive_nav_details_secion_three ul li {
         padding: 0px 15px;
     } 
+   
 }
