@@ -16,10 +16,83 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-<body>
+<body onload="myFunction()">
     <style>
+.loading_secreen{
+position: absolute;
+content: "";
+top:0px;
+left: 0px;
+width: 100%;
+height: 100vh;
+background-color: black;
+}
+.load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.load span{
+color: #fff;
+margin-bottom: 5px;
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+.animate-bottom2 {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s
+}
+.animate-bottom3 {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 3s;
+  animation-name: animatebottom;
+  animation-duration: 3s
+}
+.animate-bottom4 {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 4s;
+  animation-name: animatebottom;
+  animation-duration: 4s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+#loader{
+  transition: 1s ease-in-out;
+}
 
     </style>
+<section class="loading_secreen" id="loader">
+
+  <div class="load">
+    <span class="animate-bottom">R</span>
+    <span class="animate-bottom2">H</span>
+    <span class="animate-bottom3">Y</span>
+    <span class="animate-bottom4">L</span>
+  </div>
+
+</section>
+
 <section id="greater_then_mobile">
     <section class="home_page_section">
       
@@ -113,7 +186,8 @@
          <span><a href="raffle.html">RAFFLE</a></span>
           <span> <a href="sneaker.html">SNEAKERS</a></span>
             <span> <a href="sign_up.html">Sign up</a></span>
-              <span><a href="login.html">login</a></span>
+            <span><a href="account_setting.html">Account</a></span>  
+            <span><a href="login.html">login</a></span>
        </div>
        <div class="responsive_nav_details_secion_two">
            <ul>
@@ -145,6 +219,16 @@
   $('.open_close_nav').click(function(){
 $('.responsive_nav_bar').toggleClass('responsive_bar');
     });
+
+    var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3500);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("greater_then_mobile").style.display = "block";
+}
   
 </script>
 

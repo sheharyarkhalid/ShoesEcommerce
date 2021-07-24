@@ -33,7 +33,11 @@
         </div>
     
              <div class="select_single_sneaker">
-                 <img src="image/sneaker_one.png">
+                 <img class="gear" src="image/sneaker_one.png">
+             </div>
+
+             <div class="custom_scroll">
+               <div class="scroll_section"></div>
              </div>
     
              <div class="select_single_sneaker_properties">
@@ -78,7 +82,9 @@
               <div class="select_single_sneaker">
                   <img src="image/sneaker_one.png">
               </div>
-     
+              <div class="custom_scroll">
+                <div class="scroll_section"></div>
+              </div>
               <div class="select_single_sneaker_properties">
                   <p>STYLE AQ0818-148</p>
                   <p>COLORWAY WHITE/DARK POWDER BLUE-CONE</p>
@@ -122,6 +128,7 @@
           <span><a href="raffle.html">RAFFLE</a></span>
            <span> <a href="sneaker.html">SNEAKERS</a></span>
              <span> <a href="sign_up.html">Sign up</a></span>
+             <span> <a href="account_setting.html">Account</a></span>
                <span><a href="login.html">login</a></span>
          </div>
          <div class="responsive_nav_details_secion_two">
@@ -146,7 +153,23 @@
   <!-- responsive nav end -->
   
   <script src="script/custom.js"></script>
-  
+  <!-- <script>
+   $(function() {
+    var rotation = 0, 
+        scrollLoc = $(document).scrollTop();
+    $(window).scroll(function() {
+        var newLoc = $(document).scrollTop();
+        var diff = scrollLoc - newLoc;
+        rotation += diff, scrollLoc = newLoc;
+        var rotationStr = "rotatey(" + rotation + "deg)";
+        $(".gear").css({
+            "-webkit-transform": rotationStr,
+            "-moz-transform": rotationStr,
+            "transform": rotationStr
+        });
+    });
+})
+  </script> -->
 
 </body>
 </html>    

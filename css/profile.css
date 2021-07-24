@@ -70,6 +70,10 @@ header .logo .logo_middle_part{
    display: flex;
    font-size: 29px;
 }
+header .logo .logo_middle_part a{
+    color: #000000;
+    text-decoration: none;
+}
 header .logo .logo_middle_part small{
     transform: rotate(270deg);
     padding: 7px 0px;
@@ -246,6 +250,175 @@ position: relative;
 
 /* Mobile Screen home page end */      
 
+
+
+/* responsive nav bar start */
+
+.responsive_nav_page_section{
+    display: grid;
+    grid-template-columns: 0.2fr 8fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: ". .";
+    height: 100%;
+}
+
+.responsive_nav_bar{
+    position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+transform: translateX(-100%);
+transition: transform 0.3s ease-in-out;
+z-index: 999;
+min-width: 100%;
+height: 100%;
+background: #000000;
+overflow-y: scroll;    
+}
+
+    .responsive_nav_bar.responsive_bar{
+        transform: translateX(0%);
+    }
+      
+   
+      /* Header start */
+      .responsive_header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        border-right: 1px solid #FFFFFF;
+        float: left;
+        height: 100%;
+    }
+   .responsive_header .responsive_nav_icon i{
+        color: #FFFFFF;
+        padding-bottom: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .responsive_header .responsive_logo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding:15px 0px;
+        width: 100%;
+    }
+    .responsive_header .responsive_logo span{
+        writing-mode: vertical-rl;
+        font-size: 22px;
+       color: rgba(198, 198, 198, 0.14);
+       padding: 5px 0px;
+       line-height: 16px;
+       text-transform: uppercase;
+    }
+   .responsive_header .responsive_logo .responsive_logo_middle_part{
+        color: #FFFFFF;
+       display: flex;
+       font-size: 29px;
+    }
+    .responsive_header .responsive_logo .responsive_logo_middle_part a{
+        color: #FFFFFF;
+        text-decoration: none;   
+    }
+    .responsive_header .responsive_logo .responsive_logo_middle_part small{
+        transform: rotate(270deg);
+        padding: 7px 0px;
+    }
+    .responsive_header .responsive_insta_icon i{
+        font-size: 20px;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+.responsive_nav_details{
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+}
+    .responsive_nav_details_secion_one{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 60px;
+    }
+    .responsive_nav_details_secion_one span{
+        margin-bottom: 50px; 
+    }
+    .responsive_nav_details_secion_one a{
+        text-decoration: none;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-size: 72px;
+        line-height: 44px;
+        transition: 0.3s ease-in-out;
+        opacity: 0.9;
+    }
+    .responsive_nav_details_secion_one a:hover{
+        padding-left: 5px;
+        transition: 0.3s ease-in-out;
+        opacity: 1;
+    }
+    .responsive_nav_details_secion_two{
+      float: right;
+      width: 100%;
+      padding: 0px 30px;
+      margin-bottom: 20px;
+    }
+    .responsive_nav_details_secion_two ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .responsive_nav_details_secion_two ul li{
+        list-style: none;
+        padding: 0px 15px;
+    }
+    .responsive_nav_details_secion_two ul li a{
+        text-decoration: none;
+       color: #FFFFFF;
+       font-weight: 400;
+       font-size: 20px;
+       opacity: 0.9;
+       transition: 0.2s ease-in-out;
+    }
+    .responsive_nav_details_secion_two ul li a:hover{
+      opacity: 1;
+      padding-right: 5px;
+      transition: 0.2s ease-in-out;
+    }
+
+    .responsive_nav_details_secion_three{
+        float: right;
+        width: 100%;
+        padding: 0px 30px;
+      }
+      .responsive_nav_details_secion_three ul{
+          display: flex;
+          justify-content: flex-end;
+      }
+      .responsive_nav_details_secion_three ul li{
+          list-style: none;
+          padding: 0px 55px;
+      }
+      .responsive_nav_details_secion_three ul li a{
+          text-decoration: none;
+         color: #FFFFFF;
+         font-weight: 200;
+        font-size: 20px;
+        transition: 0.2s ease-in-out;
+      }
+      .responsive_nav_details_secion_three ul li a:hover{
+      opacity: 1;
+      padding-right: 5px;
+      transition: 0.2s ease-in-out;
+      }
+
+    /* Header End */ 
+/* responsive nav end */
+
+
 /* RESPONSIVE */
 
 /*Tablet*/
@@ -296,4 +469,36 @@ position: relative;
     .profile_nav {
         justify-content: center;
     }
+
+
+
+      
+    .responsive_nav_details_secion_one {
+        padding-left: 25px;
+    } 
+    .responsive_nav_details_secion_one a {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+    .responsive_nav_details_secion_two {
+        float: left;
+        padding: 0px 10px;
+    }.responsive_nav_details_secion_two ul{
+        flex-direction: column;
+        text-align: right;
+    }
+    .responsive_nav_details_secion_two ul li {
+        padding-bottom: 10px;
+    }
+    .responsive_nav_details_secion_three {
+        float: left;
+        padding: 0px 10px;
+    }
+    .responsive_nav_details_secion_three ul {
+        flex-direction: column;
+        text-align: right;
+    }
+    .responsive_nav_details_secion_three ul li {
+        padding: 0px 15px;
+    } 
 }

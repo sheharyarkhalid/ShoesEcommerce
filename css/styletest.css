@@ -23,7 +23,11 @@ justify-content: space-between;
 #greater_then_mobile{
     display: block;
     visibility:visible;
+    transition: 1s ease-in-out;
+    position: relative;
+   
 }
+
 
 /* Header start */
 
@@ -476,11 +480,11 @@ color: #000000;
 }
 @media (max-width: 540px){
     .Mobile_home_section{
-       display: block !important;
+       display: block;
        visibility: visible;
     }
     #greater_then_mobile{
-        display: none !important;
+        display: none;
         visibility:hidden;
     }
     .responsive_nav_details_secion_one {

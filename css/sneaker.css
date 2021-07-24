@@ -69,6 +69,10 @@ header .logo .logo_middle_part{
    display: flex;
    font-size: 29px;
 }
+header .logo .logo_middle_part a{
+    color: #000000;
+  text-decoration: none;
+ }
 header .logo .logo_middle_part small{
     transform: rotate(270deg);
     padding: 7px 0px;
@@ -143,7 +147,23 @@ align-items: center;
 }
 .single_sneaker img{
     width: 100%;
+    /* transition: transform .7s ease-in-out; */
 }
+.single_sneaker img:hover{
+
+    /* transform: rotatey(360deg); */
+    animation: rotate-btn 3s linear 1;
+    -webkit-animation: rotate-shoe-btn 3s linear 1;
+
+}
+@keyframes rotate-shoe-btn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotatey(-360deg);
+    }
+  }
 /* login form end */
 
 
