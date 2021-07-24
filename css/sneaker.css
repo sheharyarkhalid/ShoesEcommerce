@@ -14,6 +14,35 @@
        width: 100%;
        background-color: #C0C0C0;
    }
+   .carousel-control-next-icon {
+       background-image: none !important;
+       width: 94px !important;
+       text-align: right;
+       top: 40px;
+   }
+   .next_btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 1%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    right: 14px;   
+}
+   .carousel-control-next-icon  i{
+       color: #000000;
+       font-size: 30px;
+   }
    #greater_then_mobile{
     display: block;
     visibility:visible;
