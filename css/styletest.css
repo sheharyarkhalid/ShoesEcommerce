@@ -362,6 +362,7 @@ overflow-y: scroll;
     .home_page_body{
         display: flex;
         justify-content: space-between;
+        height: 100%;
     }
     .home_page_body .home_page_slider figure{
         overflow-y: hidden;
