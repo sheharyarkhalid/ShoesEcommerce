@@ -12,32 +12,31 @@
    body{
        float: left;
        width: 100%;
-       background-color: #C0C0C0;
+       background-color: #C0C0C0 !important;
+       font-family: 'Rokkitt', serif !important;
    }
    .carousel-control-next-icon {
        background-image: none !important;
        width: 94px !important;
-       text-align: right;
+       
        top: 40px;
+       height: 28px !important;
    }
+   .carousel-control-next {
+    right: 43% !important;
+}
    .next_btn{
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 100%;
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    width: 1%;
+    width: 100%;
     color: #fff;
     text-align: center;
-    opacity: .5;
-    right: 14px;   
+    opacity: .5;   
 }
    .carousel-control-next-icon  i{
        color: #000000;
@@ -127,7 +126,7 @@ width: 100%;
 padding: 0px 15px;
 margin: 0;
 margin-top: 40px;
-
+margin-bottom: 30px;
 }
 
 .sneaker_form_body_section .sneaker_section_heading{

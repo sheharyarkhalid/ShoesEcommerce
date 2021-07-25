@@ -515,21 +515,8 @@ overflow-y: scroll;
         text-align: center;
     }
 
-}
-@media (max-width: 370px){
-    .myshoes_page_labels span {
-        font-size: 18px;
-    }
-    .myshoes_page_labels_fields .myshoes_name_field  figure{
-        width: 50%;
-    }
-    .myshoes_page_labels_fields .myshoes_name_field  figure img{
-        width: 100%;
-    }
 
 
-
-      
     .responsive_nav_details_secion_one {
         padding-left: 25px;
     } 
@@ -558,5 +545,21 @@ overflow-y: scroll;
     .responsive_nav_details_secion_three ul li {
         padding: 0px 15px;
     } 
+
+}
+@media (max-width: 370px){
+    .myshoes_page_labels span {
+        font-size: 18px;
+    }
+    .myshoes_page_labels_fields .myshoes_name_field  figure{
+        width: 50%;
+    }
+    .myshoes_page_labels_fields .myshoes_name_field  figure img{
+        width: 100%;
+    }
+
+
+
+ 
 
 }
