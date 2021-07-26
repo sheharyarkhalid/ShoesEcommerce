@@ -103,9 +103,9 @@ padding-top: 40px;
     scrollbar-width: none;
 }
 
-.agb_body_section::-webkit-scrollbar {
+/* .agb_body_section::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .agb_body_section .agb_section_heading{
 float: left;

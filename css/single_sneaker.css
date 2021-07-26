@@ -444,6 +444,14 @@ overflow-y: scroll;
     .select_single_sneaker_properties p {
         margin-bottom: 10px;
     }
+ 
+    header{
+        height: 100%;
+    }
+    .single_sneaker_body_section {
+        height: 100%;
+        overflow-y: unset;
+    }
 }
 
 @media (max-width: 540px){
