@@ -595,7 +595,10 @@ color: #000000;
        visibility: visible;
     }
     .mobile_banner {
-        margin-top: 35px;
+        margin-top: 30px;
+    }
+    .mobile_banner h2 {
+        margin-bottom: 25px;
     }
     #greater_then_mobile{
         display: none !important;
