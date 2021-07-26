@@ -444,6 +444,7 @@ overflow-y: scroll;
     .impressum_body_section {
      padding: 0px 10px;
      padding-top: 40px;
+     height: 100%;
     }
 
     .responsive_nav_details_secion_one {
