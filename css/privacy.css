@@ -31,14 +31,14 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-right: 1px solid #FFFFFF;
     float: left;
-    height: 100%;
+    height: 100vh;
 }
 header .nav_plus_shooping .nav_icon i{
     color: #FFFFFF;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -46,14 +46,14 @@ header .nav_plus_shooping .shopping_cart i{
     font-size: 20px;
     cursor: pointer;
     color: #000000;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 header .logo{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding:15px 0px;
+    padding:0px 0px;
     width: 100%;
 }
 header .logo span{
@@ -100,10 +100,16 @@ float: left;
 width: 100%;
 padding: 0px 30px;
 margin: 0;
-margin-top: 40px;
-
+padding-top: 40px;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
+
+.privacy_body_section::-webkit-scrollbar {
+    display: none;
+}
 .privacy_body_section .privacy_section_heading{
 float: left;
 width: 100%;
@@ -390,6 +396,8 @@ overflow-y: scroll;
     }
     .privacy_body_section {
      padding: 0px 10px;
+      padding-top: 40px;
+      height: 100%;
     }
 
       

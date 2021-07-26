@@ -32,10 +32,10 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-right: 1px solid #000000;
     float: left;
-    height: 100%;
+    height: 100vh;
 }
 header .nav_plus_shooping .nav_icon i{
     color: #000000;
@@ -47,14 +47,14 @@ header .nav_plus_shooping .shopping_cart i{
     font-size: 20px;
     cursor: pointer;
     color: #000000;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 header .logo{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding:15px 0px;
+    padding:0px 0px;
     width: 100%;
 }
 header .logo span{
@@ -93,7 +93,7 @@ header .insta_icon i{
     align-items: center;
     border-right: 1px solid #000000;
     float: left;
-    height: 100%;
+    height: 100vh;
 }
 .impressum_footer_section_one a{
     writing-mode: vertical-rl;
@@ -112,7 +112,7 @@ header .insta_icon i{
     gap: 0px 0px; 
     grid-template-areas: 
       ". . ."; 
-     height: 100%;
+     height: 100vh;
     }
 .impressum_footer .impressum_footer_list_two{
     border-left: 1px solid black;
@@ -143,8 +143,13 @@ padding: 0px 30px;
 margin: 0;
 padding-top: 40px;
 height: 100vh;
-
+scrollbar-width: none;
+overflow-y: scroll;
 }
+.impressum_body_section::-webkit-scrollbar {
+    display: none;
+}
+
 
 .impressum_body_section .impressum_section_heading{
 float: left;

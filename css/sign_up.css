@@ -18,17 +18,22 @@
     display: block;
     visibility:visible;
 }
+.sign_up_page_section{
+display: grid;
+grid-template-columns: 0.2fr 8fr;
+grid-template-rows: auto;
+grid-template-areas: '. .';
+}
    /* Header start */
    header{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-right: 1px solid #000000;
-    margin-right: 100px;
     float: left;
-    height: 745px;
+    height: 100vh;
 }
 header .nav_plus_shooping .nav_icon i{
     color: #000000;
@@ -40,14 +45,14 @@ header .nav_plus_shooping .shopping_cart i{
     font-size: 20px;
     cursor: pointer;
     color: #000000;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 header .logo{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding:15px 0px;
+    padding:0px 0px;
     width: 100%;
 }
 header .logo span{
@@ -89,10 +94,14 @@ header .insta_icon i{
 float: left;
 width: 100%;
 padding: 0px 10px;
-position: absolute;
 margin: 0;
-top: 50px;
-z-index: 0;
+overflow-y: scroll;
+    height: 100vh;
+    padding-top: 50px;
+scrollbar-width: none;
+}
+.sign_up_section::-webkit-scrollbar {
+    display: none;
 }
 
 .sign_up_section .sign_up_form{
@@ -440,10 +449,7 @@ overflow-y: scroll;
 
 }
 @media (max-width: 767px){
-
-    header{
-    height: 762px;
-    }
+    
 }
 @media (max-width: 540px){
     .Mobile_home_section{
@@ -455,7 +461,8 @@ overflow-y: scroll;
         visibility:hidden;
     }
     .sign_up_section{
-      top:100px;
+    padding-top: 50px;
+    height: 100%;
     }
     .sign_up_section .sign_up_form {
         padding: 0px 20px;
