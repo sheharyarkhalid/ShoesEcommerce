@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/styletest.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
 
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -13,23 +13,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-</head>
+    </head>
 <body onload="myFunction()">
     <style>
+.loading_secreen{
+position: absolute;
+content: "";
+top:0px;
+left: 0px;
+width: 100%;
+height: 100vh;
+background-color: black;
+}
+.load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.load span{
+color: #fff;
+margin-bottom: 5px;
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+.animate-bottom2 {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s
+}
+.animate-bottom3 {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 3s;
+  animation-name: animatebottom;
+  animation-duration: 3s
+}
+.animate-bottom4 {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 4s;
+  animation-name: animatebottom;
+  animation-duration: 4s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+#loader{
+  transition: 1s ease-in-out;
+}
 
     </style>
 <section class="loading_secreen" id="loader">
 
   <div class="load">
     <span class="animate-bottom">R</span>
-    <span class="animate-bottom2">Y</span>
-    <span class="animate-bottom3">H</span>
+    <span class="animate-bottom2">H</span>
+    <span class="animate-bottom3">Y</span>
     <span class="animate-bottom4">L</span>
   </div>
 
@@ -47,33 +103,15 @@
              <div class="insta_icon"><i class="fab fa-instagram"></i></div>
         </header>
      
-      <div class="slide_container">  
-         <section class="home_page_body">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-             <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="image/home_banner.png" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 h-100" src="image/home_banner.png" alt="Second slide">
-          </div> 
-        </div>
-        </div>
-          <div class="explore_new"><a href="sneaker.html"><span>explore new sneakers</span><figure><img src="image/home_page_arrow.png"></figure></a></div>
-        </section>
+        <section class="home_page_body">
+           
 
-      <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="image/home_banner.png" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 h-100" src="image/home_banner.png" alt="Second slide">
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="explore_new"><span>explore new sneakers</span><figure><img src="image/home_page_arrow.png"></figure></div> -->
-       </div> 
+          <div class="home_page_slider"><figure><img src="image/home_banner.png"></figure></div>
+  
+          <div class="explore_new"><span>explore new sneakers</span><figure><img src="image/home_page_arrow.png"></figure></div>
+        </section>
+     
+        
              <div class="home_page_footer">
                  <div class="footer_content"><a href="impressum.html">impressum</a></div>
                  <div class="footer_content"><a href="shipping.html">shipping</a></div>
@@ -92,22 +130,10 @@
     </div>
     <div class="mobile_banner">
         <h2>Reach Your Highest Level</h2>
-
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="image/home_banner.png" alt="First slide">
-            </div>
-             <div class="carousel-item">
-              <img class="d-block w-100 h-100" src="image/home_banner.png" alt="Second slide">
-            </div>
-          </div>
-        
-        </div> 
-        <div class="mobile_explore"><a href="sneaker.html"><span>explore new sneakers</span><div class="figure"><img src="image/home_page_arrow.png"></div></a></div>
+        <figure><img src="image/home_banner.png"></figure>
+        <div class="mobile_explore"><span>explore new sneakers</span><div class="figure"><img src="image/home_page_arrow.png"></div></div>
     </div>
-
-
+  
     <div class="mobile_footer">
         
         <a class="mobile_footer_content" href="impressum.html">
@@ -184,7 +210,7 @@
 
 
 
-<script src="script/custom.js"></script>
+
 
 <script>
   $('.open_close_nav').click(function(){
@@ -201,13 +227,65 @@ function showPage() {
   document.getElementById("greater_then_mobile").style.display = "block";
 }
   
-$('.open_close_nav').click(function(){
-    $('.responsive_nav_bar').toggleClass('responsive_bar');
-});
-       
 </script>
 
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/slick.js"></script>
+  <script type="text/javascript" src="script/slick.min.js"></script>
 
+<script type="text/javascript">  
+
+  $(document).ready(function() {      
+$('.slider').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll:1,
+  autoplay:false,
+  autoplaySpeed:1500,
+  arrows:false,
+speed: 1500,
+  });
+  });
+
+  $(document).ready(function() {      
+$('.sliderTwo').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll:1,
+  autoplay:false,
+  autoplaySpeed:1500,
+  arrows:false,
+speed: 1500,
+  });
+  });
+
+    $(document).ready(function() {      
+$('.sliderThree').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 1,
+  autoplay:true,
+  fade:true,
+  autoplaySpeed:1500,
+  arrows:false,
+speed: 1500,
+  });
+  });
+        $(document).ready(function() {      
+$('.sliderfour').slick({
+  dots:false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll:1,
+  autoplay:false,
+  autoplaySpeed:900,
+  arrows:false,
+speed: 900,
+  });
+  });
+</script>
 
 </body>
 </html>    

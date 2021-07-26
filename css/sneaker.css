@@ -351,6 +351,7 @@ overflow-y: scroll;
     .responsive_nav_details_secion_two ul{
         display: flex;
         justify-content: flex-end;
+        margin: 0px;
     }
     .responsive_nav_details_secion_two ul li{
         list-style: none;
@@ -378,6 +379,7 @@ overflow-y: scroll;
       .responsive_nav_details_secion_three ul{
           display: flex;
           justify-content: flex-end;
+          margin: 0px;
       }
       .responsive_nav_details_secion_three ul li{
           list-style: none;

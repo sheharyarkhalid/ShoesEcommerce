@@ -13,18 +13,17 @@
        float: left;
        width: 100%;
        background-color: #C0C0C0;
-       height: 100vh;
    }
    #greater_then_mobile{
     display: block;
     visibility:visible;
 }
-.impressum_page_section{
+.shipping_page_section{
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 8fr 1fr;
+    grid-template-columns: 0.2fr 0.2fr 8fr 0.2fr;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: ". . . .";
+    grid-template-areas: ". . .";
 }
    /* Header start */
    header{
@@ -86,16 +85,16 @@ header .insta_icon i{
 /* Header End */ 
 
 /* footer one start */
-.impressum_footer_section_one_list{
+.shipping_footer_section_one_list{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
     float: left;
     height: 100%;
 }
-.impressum_footer_section_one a{
+.shipping_footer_section_one a{
     writing-mode: vertical-rl;
     text-decoration: none;
     color: #000000;
@@ -105,7 +104,7 @@ header .insta_icon i{
 
 
 /* footer 2 start */
-.impressum_footer{
+.shipping_footer{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto; 
@@ -114,18 +113,19 @@ header .insta_icon i{
       ". . ."; 
      height: 100%;
     }
-.impressum_footer .impressum_footer_list_two{
-    border-left: 1px solid black;
+.shipping_footer .shipping_footer_list_two{
+    border-right: 1px solid black;
     height: 100%;
     text-align: center;
 }
-.impressum_footer .impressum_footer_list_two a{
+.shipping_footer .shipping_footer_list_two a{
     writing-mode: vertical-rl;
 padding: 20px 15px;
 text-decoration: none;
 color: black;
 }
 /* footer two end */
+
 
 
 
@@ -141,8 +141,7 @@ float: left;
 width: 100%;
 padding: 0px 30px;
 margin: 0;
-padding-top: 40px;
-height: 100vh;
+margin-top: 40px;
 
 }
 
@@ -201,7 +200,6 @@ line-height: 20px;
 
 
 
-
 /* Mobile Screen home page start */
 
 .Mobile_home_section{
@@ -235,24 +233,23 @@ line-height: 20px;
 
       /* footer start */
  
-      .impressum_mobile_footer{
+      .shipping_mobile_footer{
 display: flex;
 flex-direction: column;
 width: 100%;
       }
-      .impressum_mobile_footer .impressum_mobile_footer_list{
+      .shipping_mobile_footer .shipping_mobile_footer_list{
     width: 100%;
     text-align: center;
-    padding: 15px 0px;
+    padding: 14px 0px;
       }
-      .impressum_mobile_footer .impressum_mobile_footer_list a{
+      .shipping_mobile_footer .shipping_mobile_footer_list a{
         color: #000000;
         text-decoration: none;
         font-size: 24px;
       }
       /*footer end  */
 /* Mobile Screen home page end */      
-
 
 
 
@@ -422,6 +419,7 @@ overflow-y: scroll;
     /* Header End */ 
 /* responsive nav end */
 
+
 /* RESPONSIVE */
 
 /*Tablet*/
@@ -441,10 +439,11 @@ overflow-y: scroll;
         display: none;
         visibility:hidden;
     }
-    .impressum_body_section {
+    .shipping_body_section {
      padding: 0px 10px;
     }
 
+   
     .responsive_nav_details_secion_one {
         padding-left: 25px;
     } 
@@ -472,5 +471,5 @@ overflow-y: scroll;
     }
     .responsive_nav_details_secion_three ul li {
         padding: 0px 15px;
-    }  
+    } 
 }
