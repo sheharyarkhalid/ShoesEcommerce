@@ -427,6 +427,16 @@ header .logo{
 .raffle_body_section {
     height: 100%;
 }
+.responsive_nav_details_secion_two{
+    position: unset;
+    bottom:0px;
+    
+}
+.responsive_nav_details_secion_three{
+    position: unset;
+    bottom:0px;
+    
+}
 
 }
 @media (max-width: 767px){
