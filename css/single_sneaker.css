@@ -435,6 +435,15 @@ overflow-y: scroll;
     .select_single_sneaker_properties p {
         margin-bottom: 10px;
     }
+    header{
+        height: 100%;
+    }
+    header .logo{
+        padding: 15px 0px;
+    }
+    .single_sneaker_body_section {
+        height: 100%;
+    }
 }
 @media (max-width: 767px){
     .select_single_sneaker_properties {
@@ -452,6 +461,11 @@ overflow-y: scroll;
         height: 100%;
         overflow-y: unset;
     }
+   
+    header .logo{
+        padding: 15px 0px;
+    }
+  
 }
 
 @media (max-width: 540px){
