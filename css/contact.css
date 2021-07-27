@@ -60,12 +60,14 @@
 }
 .contact_page_section{
     display: grid; 
-    grid-template-columns: 0.2fr 1fr 6fr; 
+    grid-template-columns: 0.2fr 1fr 12fr; 
     grid-template-rows: auto; 
     gap: 0px 0px; 
     grid-template-areas: 
       ". . ."; 
-}
+     position: absolute;
+     height: 100%;
+    }
    /* Header start */
    header{
     display: flex;
