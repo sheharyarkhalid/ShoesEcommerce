@@ -20,7 +20,8 @@
 width: 100%;
 display: flex;
 justify-content: space-between;
-
+position: fixed;
+height: 100%;
 }
 #greater_then_mobile{
     display: block !important;
@@ -372,7 +373,7 @@ overflow-y: scroll;
     .home_page_body{
         display: flex;
         justify-content: space-between;
-        height: 100vh;
+       height: 100%;
 
     }
     .home_page_body .home_page_slider figure{
