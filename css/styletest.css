@@ -309,7 +309,7 @@ overflow-y: scroll;
       padding: 0px 30px;
       margin-bottom: 20px;
       position: fixed;
-      bottom: 20px;
+      bottom: 50px;
       right: 0px;
     }
     .responsive_nav_details_secion_two ul{
@@ -340,7 +340,7 @@ overflow-y: scroll;
         width: 100%;
         padding: 0px 30px;
         position: fixed;
-        bottom: 10px;
+        bottom: 20px;
         right: 0px;
       }
       .responsive_nav_details_secion_three ul{
@@ -589,7 +589,7 @@ color: #000000;
 
 
     /*RESPONSIVE*/
-    @media (max-height: 823px) and (min-height: 441px) {
+    @media (max-height: 441px) {
         .home_page_section {
             height: 100%;
         }
@@ -603,14 +603,14 @@ color: #000000;
     /* header{
         height: 100%;
     } */
-    /* .responsive_nav_details_secion_two{
+    .responsive_nav_details_secion_two{
         position: unset;
         bottom: 0px;
     }
     .responsive_nav_details_secion_three{
         position: unset;
         bottom: 0px;
-    } */
+    }
    
     
 }
