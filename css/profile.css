@@ -439,6 +439,15 @@ overflow-y: scroll;
     .profile_nav {
         justify-content: left;
     }
+    header{
+        height: 100%;
+    }
+    header .logo{
+        padding: 15px 0px;
+    }
+    .profile_section {
+        height: 100%;
+    }
 }
 @media (max-width: 767px){
     
@@ -453,6 +462,15 @@ overflow-y: scroll;
     }
     .profile_nav {
         justify-content: left;
+    }
+    header{
+        height: 100%;
+    }
+    header .logo{
+        padding: 15px 0px;
+    }
+    .profile_section {
+        height: 100%;
     }
 }
 @media (max-width: 540px){

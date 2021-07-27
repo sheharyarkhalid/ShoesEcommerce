@@ -459,6 +459,16 @@ overflow-y: scroll;
     .myshoes_section {
         padding: 0px;
     }
+
+    header{
+        height: 100%;
+    }
+    header .logo{
+        padding: 15px 0px;
+    }
+    .myshoes_body {
+        height: 100%;
+    }
 }
 @media (max-width: 767px){
     
@@ -492,6 +502,17 @@ overflow-y: scroll;
         flex-direction: column;
         text-align: center;
     }
+
+    header{
+        height: 100%;
+    }
+    header .logo{
+        padding: 15px 0px;
+    }
+    .myshoes_body {
+        height: 100%;
+    }
+
 }
 @media (max-width: 540px){
     .Mobile_home_section{
