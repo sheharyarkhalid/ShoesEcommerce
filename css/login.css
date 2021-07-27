@@ -23,6 +23,7 @@
     grid-template-columns: 0.2fr 8fr;
     grid-template-rows: auto;
     grid-template-areas: '. .';
+    height: 100vh;
 }
    /* Header start */
    header{
