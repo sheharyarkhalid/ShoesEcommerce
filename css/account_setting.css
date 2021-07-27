@@ -453,6 +453,12 @@ overflow-y: scroll;
     .setting_nav {
         justify-content: left;
     }
+    header {
+        height: 100%;
+    }
+    .setting_section {
+        height: 100%;
+    }
 }
 @media (max-width: 540px){
     .Mobile_home_section{
