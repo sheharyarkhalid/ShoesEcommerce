@@ -438,8 +438,15 @@ overflow-y: scroll;
     .setting_nav {
         justify-content: left;
     }
+    header{
+        height: 100%;
+    }
+    .setting_section {
+        height: 100%;
+    }
 }
-@media (max-width: 767px){
+
+@media (max-width: 767px) and (orientation: landscape){
     
     .setting_page_section {
         grid-template-columns: 0.2fr 1.5fr 4fr;
