@@ -24,6 +24,7 @@
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas: ". .";
+    height: 100vh;
 }
    /* Header start */
    header{

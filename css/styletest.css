@@ -589,7 +589,11 @@ color: #000000;
 
 
     /*RESPONSIVE*/
-
+    @media (max-height: 823px) and (min-height: 441px) {
+        .home_page_section {
+            height: 100%;
+        }
+    }   
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
    
@@ -607,6 +611,7 @@ color: #000000;
         position: unset;
         bottom: 0px;
     } */
+   
     
 }
 @media (max-width: 767px){
@@ -628,18 +633,14 @@ color: #000000;
         position: unset;
         bottom: 0px;
     }
-    .home_page_section{
-        height: 100%;
-    }
+   
 }
 @media (max-width: 540px){
     .Mobile_home_section{
        display: block !important;
        visibility: visible;
     }
-    .home_page_section{
-        height: 100%;
-    }
+   
     .mobile_banner {
         margin-top: 30px;
     }
