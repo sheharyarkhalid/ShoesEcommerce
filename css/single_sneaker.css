@@ -231,12 +231,16 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 20px 10px;
+    padding: 5px 10px;
     align-items: center;
     border-bottom: 2px solid #000000;
     }
     .mobile_header .logo a{
         text-decoration: none;
+        display: block;
+    }
+    .mobile_header .logo a img{
+        width: 52px;
     }
     .mobile_header .shopping_cart i{
         color: #000000;
